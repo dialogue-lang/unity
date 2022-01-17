@@ -3,13 +3,13 @@ using System.Collections;
 
 using Dialang;
 
-namespace Dialang.Unity.Editor
+namespace Dialang.Unity
 {
     public sealed class DialangScriptAsset : ScriptableObject
     {
         public Hashtable Value { get; private set; }
 
-        internal void Set(Hashtable table)
+        public void Set(Hashtable table)
         {
             Value = table;
         }

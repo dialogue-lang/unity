@@ -6,13 +6,13 @@ using System.IO;
 
 using Dialang.Compilation.Classification;
 
-namespace Dialang.Unity.Editor
+namespace Dialang.Unity
 {
     public sealed class DialangProjectAsset : ScriptableObject
     {
         public string Value { get; private set; }
 
-        internal void Set(string path)
+        public void Set(string path)
         {
             Value = path;
         }

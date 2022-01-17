@@ -15,7 +15,7 @@ namespace Dialang.Unity
         /// </summary>
         public static event DialangProjectReimportedHandle ProjectUpdated;
 
-        internal static void InvokeProjectUpdated(Project project)
+        public static void InvokeProjectUpdated(Project project)
         {
 #if UNITY_EDITOR
             ProjectUpdated?.Invoke(project);
