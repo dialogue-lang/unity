@@ -1,0 +1,18 @@
+{
+    "name": "Dialang.Unity.Editor",
+    "rootNamespace": "Dialang.Unity.Editor",
+    "references": [
+        "GUID:16bc2b0a09d671c4e9b47bd242b2ef31"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

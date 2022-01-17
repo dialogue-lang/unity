@@ -1,0 +1,14 @@
+{
+  "name": "com.utubzgames.dialang",
+  "version": "1.0.0",
+  "description": "DiaLang support for Unity.",
+  "displayName": "Dialang.Unity",
+  "unity": "2021.2",
+  "unityRelease": "0f1",
+  "author": {
+    "name": "398utubzyt",
+    "url": "https://utubzgames.com/"
+  },
+  "type": "library",
+  "hideInEditor": false
+}
