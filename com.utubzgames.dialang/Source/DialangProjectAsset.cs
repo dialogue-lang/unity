@@ -1,10 +1,4 @@
 using UnityEngine;
-using UnityEditor;
-using UnityEditor.AssetImporters;
-
-using System.IO;
-
-using Dialang.Compilation.Classification;
 
 namespace Dialang.Unity
 {

@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
-using UnityEditor;
-
 using System.Collections.Generic;
 
+
+#if UNITY_EDITOR
+using UnityEditor;
 using Dialang.Compilation;
+#endif
 
 namespace Dialang.Unity
 {

@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEditor;
-using UnityEditor.AssetImporters;
 
 using System.IO;
 
