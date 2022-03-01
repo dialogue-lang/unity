@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEditor.AssetImporters;
 
 using System.IO;
+using System.Threading;
+using System.Diagnostics;
 
 namespace Dialang.Unity.Editor
 {
@@ -19,14 +21,20 @@ namespace Dialang.Unity.Editor
         public override void OnImportAsset(AssetImportContext ctx)
         {
             Project project = Project.Parse(File.OpenRead(UnityUtility.GetFullPath(ctx.assetPath)), true);
+
             if (project == null)
-                throw new DialangBinaryImportException();
+                Throw();
 
             DialangBinaryAsset asset = ScriptableObject.CreateInstance<DialangBinaryAsset>();
             asset.Set(project);
 
             ctx.AddObjectToAsset("Dialang Binary", asset);
             ctx.SetMainObject(asset);
+        }
+
+        private void Throw()
+        {
+            throw new DialangBinaryImportException();
         }
     }
 }
