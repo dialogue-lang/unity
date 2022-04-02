@@ -58,7 +58,7 @@ namespace Dialang.Unity
             for (int i = 0; i < assets.Length; i++)
             {
                 Compiler c = new Compiler(GetFullPath(AssetDatabase.GUIDToAssetPath(assets[i])), DummyLog);
-                CompileResult r = c.Compile(Application.dataPath);
+                CompileResult r = c.Compile(System.IO.Path.Combine(Application.dataPath, "Dialogue"));
                 
                 Debug.Log($"{c.Project.Name}: {r}");
             }
